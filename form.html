@@ -11,25 +11,51 @@
     <form>
       <h5>로그인 해주세요</h5>
       <div>
-        ID<input
+        <label for="userid">ID</label>
+        <input
           type="text"
           id="userid"
+          name="userid"
           maxlength="50"
           placeholder="ID를 입력하세요"
           required
         />
       </div>
       <div>
-        PASSWORD
+        <label for="userpassword">PASSWORD</label>
         <input
           type="password"
           id="userpassword"
+          name="userpassword"
           maxlength="20"
           placeholder="PASSWORD를 입력하세요"
           required
         />
       </div>
       <input type="submit" value="로그인" />
+    </form>
+
+    <!-- 체크박스 -->
+    <form>
+      <h5>개발환경 설치</h5>
+      <input id="vscode" type="checkbox" name="setup" value="vscode" />
+      <label for="vscode">VS Code설치</label>
+      <input id="node" type="checkbox" name="setup" value="node" />
+      <label for="node">node 설치</label>
+      <input id="git" type="checkbox" name="setup" value="git" />
+      <label for="git">Git 설치</label>
+      <input id="claudecode" type="checkbox" name="setup" value="claudecode" />
+      <label for="claudecode">클로드코드 설치</label>
+      <!-- 라디오버튼 -->
+
+      <h5>강의 난이도</h5>
+
+      <input id="lv1" type="radio" name="level" value="lv1" />
+      <label for="lv1">입문</label>
+      <input id="lv2" type="radio" name="level" value="lv2" />
+      <label for="lv2">중급</label>
+      <input id="lv3" type="radio" name="level" value="lv3" />
+      <label for="lv3">고급</label>
     </form>
   </body>
 </html>
