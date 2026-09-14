@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form요소</title>
+  </head>
+  <body>
+    <h2>Form 요소 살펴보기</h2>
+    <!-- 로그인 박스 -->
+    <form>
+      <h5>로그인 해주세요</h5>
+      <div>
+        ID<input
+          type="text"
+          id="userid"
+          maxlength="50"
+          placeholder="ID를 입력하세요"
+          required
+        />
+      </div>
+      <div>
+        PASSWORD
+        <input
+          type="password"
+          id="userpassword"
+          maxlength="20"
+          placeholder="PASSWORD를 입력하세요"
+          required
+        />
+      </div>
+      <input type="submit" value="로그인" />
+    </form>
+  </body>
+</html>
